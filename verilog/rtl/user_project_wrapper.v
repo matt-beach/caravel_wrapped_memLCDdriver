@@ -113,7 +113,7 @@ wrapped_memLCDdriver wrapped_memLCDdriver(
 
     // IOs
     .io_in(io_in),      // in to your project
-    .io_out(io_out),    // out fro your project
+    .io_out(io_out),    // out from your project
     .io_oeb(io_oeb),    // out enable bar (low active)
 
     // IRQ
