@@ -1,0 +1,3 @@
+[submodule "verilog/rtl/wrapped_memLCDdriver"]
+	path = verilog/rtl/wrapped_memLCDdriver
+	url = https://github.com/matt-beach/wrapped_memLCDdriver.git
