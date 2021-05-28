@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri May 28 17:06:09 2021
+[*]
+[dumpfile] "/home/zerotoasic/dev-asic/caravel_wrapped_memLCDdriver/verilog/dv/caravel_test/wrapped_memLCDdriver_tb.vcd"
+[dumpfile_mtime] "Fri May 28 16:43:04 2021"
+[dumpfile_size] 1912159562
+[savefile] "/home/zerotoasic/dev-asic/caravel_wrapped_memLCDdriver/verilog/dv/caravel_test/wrapped_memLCDdriver_tb.gtkw"
+[timestart] 0
+[size] 1848 911
+[pos] -51 -51
+*-27.889420 251000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 296
+[signals_width] 205
+[sst_expanded] 1
+[sst_vpaned_height] 252
+@28
+wrapped_memLCDdriver_tb.clk
+wrapped_memLCDdriver_tb.i_reset
+wrapped_memLCDdriver_tb.i_vcom_start
+wrapped_memLCDdriver_tb.o_va
+wrapped_memLCDdriver_tb.o_vb
+wrapped_memLCDdriver_tb.o_vcom
+@200
+-
+@28
+wrapped_memLCDdriver_tb.i_spi_clk
+wrapped_memLCDdriver_tb.i_spi_mosi
+wrapped_memLCDdriver_tb.i_spi_cs_n
+wrapped_memLCDdriver_tb.o_spi_cts
+@200
+-
+@28
+wrapped_memLCDdriver_tb.o_rempty
+wrapped_memLCDdriver_tb.o_rempty_almost
+wrapped_memLCDdriver_tb.o_wfull
+wrapped_memLCDdriver_tb.o_wfull_almost
+@200
+-
+@28
+wrapped_memLCDdriver_tb.o_intb
+wrapped_memLCDdriver_tb.o_gsp
+wrapped_memLCDdriver_tb.o_gck
+@29
+wrapped_memLCDdriver_tb.o_gen
+@28
+wrapped_memLCDdriver_tb.o_bsp
+wrapped_memLCDdriver_tb.o_bck
+@24
+wrapped_memLCDdriver_tb.o_rgb[5:0]
+[pattern_trace] 1
+[pattern_trace] 0
