@@ -69,11 +69,29 @@ async def test_start(dut):
 
     await reset(dut)
 
+    assert dut.o_intb   == 0
+    assert dut.o_gsp    == 0
+    assert dut.o_gck    == 0
+    assert dut.o_gen    == 0
+    assert dut.o_bsp    == 0
+    assert dut.o_bck    == 0
+    assert dut.o_rgb    == 0
+    assert dut.o_rempty == 1
+    assert dut.o_wfull  == 0
+    assert dut.i_vcom_start == 0
+    assert dut.o_va     == 0
+    assert dut.o_vb     == 0
+    assert dut.o_vcom   == 0
+
     dut.i_vcom_start <= 1
     
-    await send_lcd_line(dut, 8)
+    await send_lcd_line(dut, 2)
     while (dut.o_rempty == 0):
         await ClockCycles(dut.clk, 1)
 
-    await ClockCycles(dut.clk, 5000) # .050ms
+    assert dut.o_rempty == 1
+    assert dut.uut.mprj.wrapped_memLCDdriver.memLCDdriver.memlcd_fsm.r_count_v == 2
+    assert dut.uut.mprj.wrapped_memLCDdriver.memLCDdriver.memlcd_fsm.r_count_h == 121
+
+    await ClockCycles(dut.clk, 1000) # .010ms
 
